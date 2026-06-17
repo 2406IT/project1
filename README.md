@@ -1,17 +1,21 @@
-# touchapp
+# Touch Visualizer - Интерактивно Flutter Приложение
 
-A new Flutter project.
+Това е интерактивно мобилно приложение, създадено с фреймуорка **Flutter** и езика за програмиранe **Dart**.
 
-## Getting Started
+## Описание на проекта
+Приложението представлява визуализатор на докосвания (Touch Visualizer). Основната му цел е да улавя жестовете на потребителя върху екрана в реално време и да генерира динамични, анимирани частици.
 
-This project is a starting point for a Flutter application.
+## Използвани технологии и концепции във Flutter
+* **Управление на състоянието (State Management):** Използване на `StatefulWidget` за динамично обновяване на екрана.
+* **Анимации:** Използване на `AnimationController` с непрекъснат цикъл (`repeat`), който прерисува платното 60 пъти в секунда.
+* **Детекция на жестове:** Използване на `GestureDetector` с методите `onTapDown` и `onPanUpdate`.
+* **Ниско ниво на рисуване (Canvas API):** Използване на компонентите `CustomPaint` и `CustomPainter` за директно изчертаване на геометрични обекти (кръгове) върху графичното платно на устройството.
 
-A few resources to get you started if this is your first Flutter project:
+## Предварителни изисквания за стартиране
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+За да можете да стартирате проекта успешно на Вашия компютър, е необходимо да имате следната предварителна подготовка:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Инсталиран Flutter SDK:** Трябва да имате инсталирана стабилна версия на Flutter.
+2. **Инсталиран текстов редактор:** Проектът е разработен и се поддържа най-добре с **Visual Studio Code** (с инсталирани разширения за Flutter и Dart) или **Android Studio**.
+3. **Устройство за тестване:** Трябва да имате пуснат **Android/iOS Емулатор** или свързано **реално мобилно устройство** в режим *Developer Mode* с активирано *USB Debugging*.
+
